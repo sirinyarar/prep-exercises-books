@@ -1,0 +1,31 @@
+4. let myBooks = [
+{
+title: 'book1',
+author: 'author1',
+alreadyRead: true,
+},
+
+{
+title: 'book2',
+author: 'author2',
+alreadyRead: true,
+},
+
+{
+title: 'book3',
+author: 'author3',
+alreadyRead: false,
+}
+];
+
+// could you explain how to write below part?)
+for (let bookIndex in myBooks  {
+// bookIndex is method name ? how can we guess which method should we use if we don't know all method and their function?
+const book = myBooks[bookIndex];
+
+if (book.alreadyRead) {
+console.log(`${book.title} by ${book.author}. You already read "${book.title}".`);
+} else{
+console.log(`${book.title} by ${book.author}. You still need to read "${book.title}".`);
+}
+}
