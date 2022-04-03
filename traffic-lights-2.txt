@@ -1,0 +1,40 @@
+//i couldn't complete output part. Could you look whats missing part?
+
+ const trafficLight = {
+  possibleStates: ["green", "orange", "red"],
+  stateIndex: 0,
+};
+
+let cycle = 0;
+while (cycle < 2) {
+  const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
+  console.log("The traffic light is on", currentState);
+
+  // TODO
+  // if the color is green, turn it orange
+if(currentState == 'green') {
+trafficLight.possibleStates[trafficLight.stateIndex]= 'orange';
+
+}
+
+  // if the color is orange, turn it red
+  else if(currentState == 'orange'){
+  trafficLight.possibleStates[trafficLight.stateIndex]= 'red';
+  }
+  
+  // if the color is red, add 1 to cycles and turn it green
+else(currentState == 'red')
+cycle++;
+trafficLight.possibleStates[trafficLight.stateIndex]= 'green';
+}
+
+
+/**
+ * The output should be:
+The traffic light is on green
+The traffic light is on orange
+The traffic light is on red
+The traffic light is on green
+The traffic light is on orange
+The traffic light is on red
+*/ 
